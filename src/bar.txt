@@ -1,0 +1,1 @@
+This is the first line in the fileThis is the second line of my new fileThis is the last line and it is cool

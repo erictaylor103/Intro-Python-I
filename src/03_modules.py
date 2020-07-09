@@ -12,9 +12,9 @@ import sys
 # YOUR CODE HERE
 
 argList = sys.argv
-for i in argList:
-    print(i)
-#print (int(argList[1])+3) #this prints a number argument plus 3
+#for i in argList:
+    #print("argv",i)
+print (int(argList[1])+3) #this prints a number argument plus 3
 
 
 # Print out the OS platform you're using:

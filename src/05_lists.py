@@ -1,14 +1,18 @@
 # For the exercise, look up the methods and functions that are available for use
 # with Python lists.
 
-x = [1, 2, 3]
-y = [8, 9, 10]
 
+x = [1, 2, 3]
+x2 = x.copy()
+y = [8, 9, 10]
+print(hex(id(x)))
+print(hex(id(x2)))
 # For the following, DO NOT USE AN ASSIGNMENT (=).
 
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE
 x.append(4)
+print(hex(id(x)))
 print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
@@ -20,9 +24,9 @@ print(x)
 # YOUR CODE HERE
 
 #NEED TO CHECK HOW TO DO THIS ONE
-y.remove(8)
-x.extend(y[0:3])
-print(x)
+
+x.remove(8)
+print("This is it:",x)
 
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]

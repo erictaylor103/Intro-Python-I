@@ -5,6 +5,7 @@
 x = 12
 
 def change_x():
+    global x #we made the "x" variable a global variable so we can use it inside the function (globally)
     x = 99
 
 change_x()
@@ -19,8 +20,9 @@ def outer():
     y = 120
 
     def inner():
-        y = 999
-
+        nonlocal y #we use the "nonlocal" keyword to make the "y" variable a "global variable" inside the nested function
+        y = 999 
+        
     inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
